@@ -1,4 +1,6 @@
 # StormLab1F
+## Zain ul abideen Ahmad
+### 24k0818
 
 I am pursuing a B.Sc. in Computer Science, and I have created this repository to store my Programming Fundamentals Lab tasks and assignments. 
 
