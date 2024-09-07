@@ -1,6 +1,6 @@
 Q3:
 
-```c
+
 #include <stdio.h>
 int main()
 {
@@ -14,6 +14,6 @@ int main()
 	Salary = Salary - (Salary * TaxR);
 	printf("Your Salary after tax deduction is: %0.2f", Salary);
 } 	
-```
+
 
 wrong
