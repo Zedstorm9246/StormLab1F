@@ -1,6 +1,5 @@
 Q2:
 
-```c
 #include <stdio.h>
 int main()
 {
@@ -12,4 +11,4 @@ int main()
 	y = temp;
 	printf("%d, %d", x, y);
 }
-```
+
