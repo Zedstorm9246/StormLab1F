@@ -1,5 +1,5 @@
-Q2:Write a C program that takes two integer values as input from the user. Then swap the values taken
-from the user and display the output of the variables.
+/*Q2:Write a C program that takes two integer values as input from the user. Then swap the values taken
+from the user and display the output of the variables.*/
 
 #include <stdio.h>
 int main()
