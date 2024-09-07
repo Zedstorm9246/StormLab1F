@@ -7,9 +7,9 @@ int main()
   int y1, y2, x1, x2;
   float slope;
   printf("Enter first point\n");
-  scanf("%d %d", &x1, &x2);
+  scanf("%d %d", &x1, &y2);
   printf("Enter second point\n");
-  scanf("%d %d", &y1, &y2);
+  scanf("%d %d", &x2, &y2);
   slope = (y2-y1)/(x2-x1);
   printf("The slope is %.3f", slope);
 } 
