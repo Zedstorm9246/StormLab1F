@@ -12,21 +12,26 @@ Now for class, the first digital indicates which section is allocated to the stu
 
 #include<stdio.h>
 int main()
-{
-    char Roll_no[7], Section;
-    int yearR, semester, SectionNum;
-    printf("Enter a your Roll number like '24k-1010': ");
-    scanf(" %8s", &Roll_no);
-    yearR = (Roll_no[0] - '0') * 10 + (Roll_no[1]-'0');
-    semester = 1 + ((24-yearR)*2);
-    SectionNum = Roll_no[5] - '0';
-    Section = SectionNum + 'A'-1;
-    printf("Year of Registration: %d", yearR);
-    printf("\n %c", Section);
-    semester == 1? printf("\n1st semester"):
-    semester == 2? printf("\n2nd semester"):
-    semester == 3? printf("\n3rd semester"):
-    semester > 4? printf("\n%dth semester", semester):
-    printf("Error");
+ {
+    char roll_number[7];
+    int registrationYear, currentYear = 24; 
+    int yearsPassed, semester;
+    int sectionDigit;
+    char section;
+    printf("Enter roll number (for eg: 24K-1021): ");
+    scanf("%6s", roll_number);
+    registrationYear = (roll_number[0] - '0') * 10 + (roll_number[1] - '0'); 
+    yearsPassed = (currentYear - registrationYear);
+    (yearsPassed < 5) ?
+   	semester= (yearsPassed*2+1)
+    : 'error';
+    sectionDigit = roll_number[4]-'0';
+    (sectionDigit >= 1 && sectionDigit <= 6) ?
+  	section=(sectionDigit + 'A'-1)
+    : 'error' ;
+    printf("Registration Year: %d\n", registrationYear);
+    printf("Current Semester: %d\n", semester);
+    printf("Section: %c\n", section);
+    return 0; 
 }
 
