@@ -6,12 +6,9 @@ int main()
     do
     {
         printf("\nEnter n: ");
-
         scanf("%d", &n);
-
         printf("%d + %d = %d", n, sum, sum + n);
-
         sum = sum + n;
-    } while (n != 0);
-    
+    } 
+    while (n != 0);
 }
