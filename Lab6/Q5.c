@@ -1,9 +1,19 @@
-#include <stdio.h>
+/*5.Make a pattern mentioned below using loops
+    * * * * *
+    *       * 
+    *       *
+    *       *
+    *       *       
+    * * * * *
+*/ 
+
+#include<stdio.h>
+
 int main()
 {
-    for (int i = 0; i < 6; i++)
+    for(int i = 0 ; i < 6 ; i++)
     {
-        if (i == 0 || i == 5)
+        if(i == 0 || i == 5)
         {
             printf("* * * * *\n");
         }
@@ -13,3 +23,6 @@ int main()
         }
     }
 }
+
+
+             
