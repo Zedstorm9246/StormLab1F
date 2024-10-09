@@ -1,17 +1,28 @@
-#include <stdio.h>
+/*7. Make another pattern like this using characters
+    A B C D E
+    B       F
+    C       G
+    D       H
+    E       I
+    F G H I J 
+*/ 
+
+#include<stdio.h>
+
 int main()
 {
-char a;
-for (a=0;a<6;a++)
-{
-  if (a == 0 || a ==5 )
-  { 
-    printf("%c %c %c %c %c\n",a+65,a+66, a+67,a+68,a+69);
-  } 
-  else
-  {
-  	printf("%c       %c\n",a+65, a+69);
-  }
+    for(int i = 0 ; i < 6 ; i++)
+    {
+        if(i == 0 || i == 5)
+        {
+            printf("%c %c %c %c %c\n", i+65, i+66, i+67, i+68, i+69);
+        }
+        else
+        {
+            printf("%c       %c\n", i+66, i+70);
+        }
+    }
 }
-return 0;
-}
+
+
+             
